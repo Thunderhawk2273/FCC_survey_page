@@ -1,0 +1,108 @@
+:root{
+    --survey-bg-color: rgb(36, 191, 238, 0.5);
+}
+
+body{
+    background: rgb(200, 200, 200);
+}
+
+.center-text{
+    text-align: center;
+}
+
+#title{
+    margin: 50px 0 20px 0;
+    font-size: 60px;
+}
+
+#description{
+    font-size: 35;
+}
+
+#survey-form{
+    background: var(--survey-bg-color);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(35, 56, 124);
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+label{
+    display: inline-block;
+    margin: 20px 0px 10px 20px;
+    font-size: 20px;
+}
+
+form input{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border:none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+    form input:focus{
+        outline: none;
+    }
+
+
+input[type=checkbox]{
+    display: inline-block;
+    width: 15px;
+}
+
+input[type=radio]{
+    display: inline-block;
+    width: 15px;
+}
+
+fieldset{
+    margin: 30px 0px;
+    border: none;
+}
+
+fieldset legend{
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+select{
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+textarea{
+    resize:none;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+    textarea:focus{
+        outline:none;
+    }
+
+
+#submit{
+    width: 50%;
+    margin: 20 auto;
+    margin-left: 25%;
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(168, 238, 64);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FCC: Survey Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+    <div class="center-text">
+        <h1 id="title">General Information Page</h1>
+        <p id="description">Tell us about yoursel!</p>
+    </div>
+    <div id="survey-form">
+        <form>
+            <label id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+
+            <label id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="johnDoe@email.com" required>
+
+            <label id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="0 - 100" min="0" max="100">
+
+
+            <fieldset>
+                <legend>Select the sports you have participated in:</legend>
+                <div class="item"><input type="checkbox" name="extracurriculars" id="soccer" value="soccer"><label for="soccer">Soccer</label></div>
+                <div class="item"><input type="checkbox" name="extracurriculars" id="baseball" value="baseball"><label for="baseball">Baseball</label></div>
+                <div class="item"><input type="checkbox" name="extracurriculars" id="basketball" value="basketball"><label for="basketball">Basketball</label></div>
+                <div class="item"><input type="checkbox" name="extracurriculars" id="volleyball" value="volleyball"><label for="volleyball">Volleyball</label></div>
+                <div class="item"><input type="checkbox" name="extracurriculars" id="golf" value="golf"><label for="golf">Golf</label></div>
+                <div class="item"><input type="checkbox" name="extracurriculars" id="rugby" value="rugby"><label for="rugby">Rugby</label></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What is your favorite type of weather?</legend>
+                <div class="item"><input type="radio" id="clear" name="weather" value="clear"><label for="clear">Clear</label></div>
+                <div class="item"><input type="radio" id="rainy" name="weather" value="rainy"><label for="rainy">Rainy</label></div>
+                <div class="item"><input type="radio" id="cloudy" name="weather" value="cloudy"><label for="cloudy">Cloudy</label></div>
+                <div class="item"><input type="radio" id="stormy" name="weather" value="stormy"><label for="stormy">Stormy</label></div>
+            </fieldset>
+
+
+            <label id="hobbies">Select a hobby: </label>
+            <select id="dropdown">
+                <option value="">--Make a selection--</option>
+                <option value="reading">Reading</option>
+                <option value="writing">Writing</option>
+                <option value="art">Art</option>
+                <option value="sports">Sports</option>
+                <option value="robotics">Robotics</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label id="comments-label" for="comments">Please leave a suggestion on how to improve the survey:</label>
+            <textarea id="comments"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
